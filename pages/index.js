@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useState } from 'react'
 import Button from '../components/Button'
 import ClickCount from '../components/ClickCount'
+import WeatherWidget from '../components/WeatherWidget'
 import styles from '../styles/home.module.css'
 
 function throwError() {
@@ -28,42 +29,12 @@ function Home() {
 
   return (
     <main className={styles.main}>
-      <h1>Fast Refresh Demo</h1>
-      <p>
-        Fast Refresh is a Next.js feature that gives you instantaneous feedback
-        on edits made to your React components, without ever losing component
-        state.
-      </p>
+      <h1>Asia Travel</h1>
+      <p>Discover the best destinations, book your next adventure, and check the latest weather in top Asian cities!</p>
+      <a href="/login" className={styles.loginBtn}>Login</a>
+      <WeatherWidget />
       <hr className={styles.hr} />
-      <div>
-        <p>
-          Auto incrementing value. The counter won't reset after edits or if
-          there are errors.
-        </p>
-        <p>Current value: {count}</p>
-      </div>
-      <hr className={styles.hr} />
-      <div>
-        <p>Component with state.</p>
-        <ClickCount />
-      </div>
-      <hr className={styles.hr} />
-      <div>
-        <p>
-          The button below will throw 2 errors. You'll see the error overlay to
-          let you know about the errors but it won't break the page or reset
-          your state.
-        </p>
-        <Button
-          onClick={(e) => {
-            setTimeout(() => document.parentNode(), 0)
-            throwError()
-          }}
-        >
-          Throw an Error
-        </Button>
-      </div>
-      <hr className={styles.hr} />
+      {/* ...existing homepage content can be added here as needed ... */}
     </main>
   )
 }

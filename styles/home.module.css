@@ -9,3 +9,21 @@
   border-bottom: 1px solid #efefef;
   margin: 3em auto;
 }
+
+.loginBtn {
+  display: inline-block;
+  margin: 1.5rem 0 1rem 0;
+  padding: 0.8rem 2.2rem;
+  background: #0a2540;
+  color: #fff;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+}
+.loginBtn:hover {
+  background: #ffb347;
+  color: #0a2540;
+}

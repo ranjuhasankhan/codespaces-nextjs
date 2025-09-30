@@ -1,0 +1,29 @@
+.main {
+  min-height: 80vh;
+  padding: 2rem 1rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.countryList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+.countryCard {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  padding: 1.5rem;
+  flex: 1 1 250px;
+  min-width: 220px;
+  max-width: 300px;
+  transition: box-shadow 0.2s;
+}
+.countryCard:hover {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.13);
+}
+.countryCard h2 {
+  margin-top: 0;
+  color: #0a2540;
+}
